@@ -50,7 +50,9 @@ The system is a collection of focused components, each doing one thing well.
 
 **A web application scanner** tests the honeypot web interfaces for common vulnerabilities — injection, template injection, WordPress misconfigurations — on a recurring schedule. Results feed into the same reporting pipeline.
 
-**A real-time dashboard** provides instant visibility into system health, custom security metrics, and operational status. No Grafana setup required — it just works.
+**A real-time dashboard** provides instant visibility into system health, custom security metrics, and operational status. It runs with zero configuration overhead — just a container with host networking. Custom security metrics get pushed every 30 seconds via a lightweight statsd pipeline: honeypot connections, unique attacker counts, firewall blocks, threat intel hits, and pipeline health. The result is a single page where you can glance and know whether the system is quiet or under pressure. CPU, memory, disk, and network sit alongside security-specific charts — no Grafana setup, no Prometheus config, no dashboard-as-code rabbit holes. Just open the port and watch.
+
+![The dashboard in action](dashboard-screenshot.jpg)
 
 **An email pipeline** delivers reports directly to an inbox. New messages that arrive in the monitoring inbox get automatically forwarded to a personal email. The AI agent writes, formats, and sends every report.
 

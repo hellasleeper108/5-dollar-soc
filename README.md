@@ -13,6 +13,8 @@ This repository documents a practical homelab / SOC-in-a-box setup used to learn
 
 Read the story: **[The $5 SOC: What I Actually Use a Cheap Cloud Server For](docs/the-5-dollar-soc.md)**
 
+![Dashboard](docs/dashboard-screenshot.jpg)
+
 ## Why this project exists
 
 Most security labs are either:
