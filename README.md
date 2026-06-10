@@ -9,6 +9,10 @@ This repository documents a practical homelab / SOC-in-a-box setup used to learn
 - detection engineering
 - AI agent automation
 
+## The full write-up
+
+Read the story: **[The $5 SOC: What I Actually Use a Cheap Cloud Server For](docs/the-5-dollar-soc.md)**
+
 ## Why this project exists
 
 Most security labs are either:
