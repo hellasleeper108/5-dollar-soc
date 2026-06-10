@@ -9,9 +9,18 @@ This repository documents a practical homelab / SOC-in-a-box setup used to learn
 - detection engineering
 - AI agent automation
 
-## The full write-up
+## The headline
 
-Read the story: **[The $5 SOC: What I Actually Use a Cheap Cloud Server For](docs/the-5-dollar-soc.md)**
+The server costs less than a Whataburger combo. The AI model that runs the stack is a trillion-parameter MiMo-V2.5-Pro — fractions of a penny per million tokens. The agent administers everything autonomously and emails you daily reports.
+
+Read the story: **[Less Than Whataburger: What $5/Month Gets You in 2026](docs/less-than-whataburger.md)**
+
+## The full technical write-up
+
+Read the stories:
+
+- **[Less Than Whataburger: What $5/Month Gets You in 2026](docs/less-than-whataburger.md)** — the headline post
+- **[The $5 SOC: What I Actually Use a Cheap Cloud Server For](docs/the-5-dollar-soc.md)** — the full technical write-up
 
 ![Dashboard](docs/dashboard-screenshot.jpg)
 
