@@ -1,0 +1,31 @@
+# Sanitized Hermes Agent cron examples for public documentation.
+# Do not include real IDs, hosts, emails, or API keys.
+
+jobs:
+  - name: threat-intel-auto-ban
+    schedule: every 6h
+    purpose: enrich suspicious IPs and update blocklists
+
+  - name: honeypot-harvester
+    schedule: every 6h
+    purpose: collect honeypot telemetry and summaries
+
+  - name: daily-security-brief-email
+    schedule: "08:30 UTC"
+    purpose: email daily security brief
+
+  - name: weekly-soc-report-email
+    schedule: Sunday 09:00 UTC
+    purpose: email weekly SOC report
+
+  - name: email-forwarder
+    schedule: every 3 hours
+    purpose: forward inbox messages to external email
+
+  - name: vulnerability-digest
+    schedule: daily
+    purpose: summarize fresh vulnerability intelligence
+
+  - name: web-scan-pipeline
+    schedule: every 6h
+    purpose: run recurring web security checks against local targets

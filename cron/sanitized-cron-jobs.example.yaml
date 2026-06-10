@@ -1,0 +1,30 @@
+# Sanitized cron summary for public docs.
+# Keep job names readable; remove internal IDs, delivery targets, and private hosts.
+
+- name: threat-intel-auto-ban
+  schedule: every 6h
+  purpose: enrich/block abusive IPs and update blocklists
+
+- name: daily-security-brief-email
+  schedule: 08:30 UTC daily
+  purpose: email daily security summary via AgentMail
+
+- name: weekly-soc-report-email
+  schedule: Sunday 09:00 UTC
+  purpose: email weekly SOC report via AgentMail
+
+- name: email-forwarder
+  schedule: every 3 hours
+  purpose: forward inbox messages to external email
+
+- name: honeypot-harvester
+  schedule: every 6h
+  purpose: collect and summarize honeypot telemetry
+
+- name: vulnerability-digest
+  schedule: daily
+  purpose: summarize new vuln intelligence
+
+- name: web-scan-pipeline
+  schedule: every 6h
+  purpose: run web scanning against local targets
